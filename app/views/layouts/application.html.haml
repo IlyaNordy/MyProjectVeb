@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    = favicon_link_tag 'favicon.ico'
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title= content_for(:title) || "My Project"
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
+    %meta{:content => "yes", :name => "mobile-web-app-capable"}/
+    = csrf_meta_tags
+    = csp_meta_tag
+    = yield :head
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload'
+    = javascript_importmap_tags
+  %body
+    = render 'shared/header'   # Добавляем хедер
+    .container
+      = yield
+    = render 'shared/footer'   # Добавляем футер
