@@ -77,6 +77,6 @@ end
 
 gem "haml-rails", "~> 2.1"
 
-gem "byebug", "~> 11.1"
+gem "byebug", "~> 12.0"
 gem "better_errors", "~> 2.10"
 gem "binding_of_caller", "~> 1.0"
