@@ -1,24 +1,29 @@
-# README
+# MyProjectVeb
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Учебный проект на Ruby on Rails.
 
-Things you may want to cover:
+## О проекте
+Проект разработан для практики создания веб-приложения на Rails. В процессе работы использовались стандартные каталоги Rails, конфигурация базы данных и базовые инструменты разработки.
 
-* Ruby version
+## Стек
+- Ruby
+- Ruby on Rails
+- HTML
+- Docker
 
-* System dependencies
+## Что реализовано
+- структура Rails-приложения
+- настройка окружения проекта
+- подключение базы данных
+- базовая серверная логика
+- подготовка проекта к локальному запуску
 
-* Configuration
+## Цель проекта
+Закрепление навыков разработки на Ruby on Rails и понимание структуры веб-приложения.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Запуск проекта
+```bash
+bundle install
+rails db:create
+rails db:migrate
+rails s
